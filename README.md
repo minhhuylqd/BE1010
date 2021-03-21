@@ -12,7 +12,7 @@ node index.js
 
 #### Access server API via web browser:
 http://localhost:3000/<API>
-<i>Example: </i>
+<br /><i>Example: </i>
 http://localhost:3000/timestamp
 
 #### POST Request to /logs via shell:
@@ -23,7 +23,7 @@ curl --request POST \
     "level": <i>string</i>,
     "message": <i>string</i>
 }'
-<i>Example: </i>
+<br /><i>Example: </i>
 curl --request POST \
 --url http://localhost:3000/logs \
 --header 'content-type: application/json' \
