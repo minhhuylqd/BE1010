@@ -11,11 +11,12 @@ node index.js
 ```
 
 #### Access server API via web browser:
-http://localhost:3000/<API>
-<br /><i>Example: </i>
-http://localhost:3000/timestamp
+```http://localhost:3000/<API>```
+<br /><i>Example: </i><br />
+```http://localhost:3000/timestamp```
 
 #### POST Request to /logs via shell:
+```
 curl --request POST \
 --url http://localhost:3000/logs \
 --header 'content-type: application/json' \
@@ -23,7 +24,9 @@ curl --request POST \
     "level": <i>string</i>,
     "message": <i>string</i>
 }'
-<br /><i>Example: </i>
+```
+<br /><i>Example: </i><br />
+```
 curl --request POST \
 --url http://localhost:3000/logs \
 --header 'content-type: application/json' \
@@ -31,3 +34,4 @@ curl --request POST \
     "level": "info",
     "message": "Test Message"
 }'
+```
