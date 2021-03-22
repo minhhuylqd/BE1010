@@ -6,9 +6,6 @@ const port = 3000
 
 app.use(express.json())
 
-//Noted
-app.use('/static', express.static('public'))
-
 
 app.get('/timestamp', (req, res) => {
 	let timeStamp = Date.now()
@@ -33,6 +30,7 @@ app.post('/logs', (req, res) => {
 		}
 		console.log("Log saved successfully.")
 	})
+	res.sendStatus(200)
 })
 
 app.get('/logs', (req, res) => {
